@@ -1,3 +1,4 @@
+//******NODE.JS SERVER EXAMPLE CODE******//
 const http = require('http');
 // create server
 const server = http.createServer((req, res) => {
@@ -11,11 +12,6 @@ const server = http.createServer((req, res) => {
         res.end();
     }
 });
-
-// register listener ******* NOT NEEDED
-// server.on('connection', (socket) => {
-//     console.log('New Connection');
-// })
 
 // server listening on port 3000 => localhost:3000/api/courses
 server.listen(3000);
